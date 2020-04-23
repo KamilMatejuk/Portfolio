@@ -11,6 +11,7 @@ function setup() {
 	// background(0)
 	translate(windowWidth / 2, 0);
 	drawCPU(0.6 * windowHeight, 0.12 * windowHeight);
+	noLoop()
 }
 
 function windowResized() {
@@ -18,6 +19,7 @@ function windowResized() {
 	// background(0)
 	translate(windowWidth / 2, 0);
 	drawCPU(0.6 * windowHeight, 0.12 * windowHeight);
+	noLoop()
 }
 
 function drawCPU(posY, size) {

@@ -21,17 +21,22 @@ function setup(){
     let section1 = document.getElementsByClassName('part1')[0]
     let section2 = document.getElementsByClassName('part2')[0]
     section2.style.marginTop = (endOfPaths - section1.scrollHeight + 100) + 'px'
+    noLoop()
 }
 
 function draw(){
-    translate(windowWidth/2, 0)
-    if(arrowXmin < mouseX && mouseX < arrowXmax 
-        && arrowYmin < mouseY && mouseY < arrowYmax){
-        drawArrow(5)
+    if(windowWidth < 768){
+        noLoop()
     } else {
-        drawArrow(3)
+        translate(windowWidth/2, 0)
+        if(arrowXmin < mouseX && mouseX < arrowXmax 
+            && arrowYmin < mouseY && mouseY < arrowYmax){
+            drawArrow(5)
+        } else {
+            drawArrow(3)
+        }
+        translate(-windowWidth/2, 0)
     }
-    translate(-windowWidth/2, 0)
 }
 
 function windowResized(){
@@ -43,6 +48,7 @@ function windowResized(){
     let section2 = document.getElementsByClassName('part2')[0]
     section2.style.marginTop = (endOfPaths - section1.scrollHeight + 100) + 'px'
     lineWeight = map(windowWidth, 0, 1920, 1, 3)
+    noLoop()
 }
 
 function mouseClicked(){
