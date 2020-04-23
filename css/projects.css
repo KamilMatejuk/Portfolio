@@ -1,0 +1,18 @@
+@keyframes welcome-anim-h1 {
+    0% {
+        padding-bottom: 100vh;
+    }
+    100% {
+        padding-bottom: 15vh;
+    }
+}
+
+.mid-title {
+    font-size: 0.7em;
+    color: red;
+}
+
+.btn-code {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

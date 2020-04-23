@@ -1,0 +1,284 @@
+/* Kamil Matejuk  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000 !important;
+}
+
+.row>div {
+    height: 60vh;
+}
+
+.cont>div {
+    margin: 0;
+}
+
+/********************* OGÓLNE CZĘŚCI ******************/
+
+.screenSizedContainer {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.screenSizedContainer h3 {
+    /* tytuł */
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    z-index: 10;
+    margin: 15vh 10vw 5vh 10vw;
+}
+
+.screenSizedContainer h4 {
+    /* podtytuł */
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.screenSizedContainer p {
+    /* tekst */
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+}
+
+/********************* CZĘŚĆ PIERWSZA - TYTUŁ ******************/
+
+.screenSizedContainer.part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenSizedContainer.part1 h1 {
+    align-self: center;
+    color: #ffffff;
+    font-size: 6em;
+    font-weight: bold;
+    font-family: 'Major Mono Display', monospace;
+    /* font-family: 'Megrim', cursive; */
+    /* font-family: 'Black Ops One', cursive; */
+    /* font-family: 'Orbitron', sans-serif; */
+    text-align: center;
+    margin: 0 10vw;
+    animation: welcome-anim-h1 1.3s ease-out forwards;
+}
+
+@keyframes welcome-anim-h1 {
+    0% {
+        padding-bottom: 150vh;
+    }
+    100% {
+        padding-bottom: 35vh;
+    }
+}
+
+#defaultCanvas0 {
+    width: 100% !important;
+    animation: welcome-anim-img 1.7s ease-out forwards;
+}
+
+@keyframes welcome-anim-img {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/********************* CZĘŚĆ DRUGA - NARZEDZIA ******************/
+
+.screenSizedContainer.part2 .grid-cont>* {
+    width: min(60vh, 90vw);
+    height: min(30vh, 45vw);
+    margin: 2vh auto;
+    border: 2px #fff solid;
+}
+
+.screenSizedContainer.part2 .grid-cont {
+    margin: auto;
+    display: grid;
+    grid-template-areas: "jezyki     bazy" "wersje     narzedzia";
+}
+
+.screenSizedContainer.part2 .grid-jezyki {
+    grid-area: jezyki;
+}
+
+.screenSizedContainer.part2 .grid-bazy {
+    grid-area: bazy;
+}
+
+.screenSizedContainer.part2 .grid-wersje {
+    grid-area: wersje;
+}
+
+.screenSizedContainer.part2 .grid-narzedzia {
+    grid-area: narzedzia;
+}
+
+.screenSizedContainer.part2 .grid-cont .text-over, .text-under {
+    width: 95%;
+    height: 95%;
+    margin: 5px auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.screenSizedContainer.part2 .grid-cont .text-over {
+    position: relative;
+    top: calc(-0.95 * min(30vh, 45vw));
+    transition: opacity 0.5s;
+}
+
+.screenSizedContainer.part2 .grid-cont .text-over:hover, .text-over:active {
+    opacity: 0;
+}
+
+.screenSizedContainer.part2 .grid-cont .text-over>* {
+    padding: 0;
+    margin: 0;
+}
+
+.screenSizedContainer.part2 .grid-cont ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+.screenSizedContainer.part2 .grid-cont li {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/********************* CZĘŚĆ TRZECIA - PROJEKTY ******************/
+
+.screenSizedContainer img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.screenSizedContainer .text {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+.screenSizedContainer .btns-project {
+    width: 100%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+    column-gap: 10%;
+}
+
+.screenSizedContainer .btn-projects:link {
+    color: #fff;
+    display: block;
+    text-align: center;
+    align-self: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Major Mono Display', monospace;
+    text-decoration: none;
+    letter-spacing: 0;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.screenSizedContainer .btn-projects:hover,
+.screenSizedContainer .btn-projects:active,
+.screenSizedContainer .btn-projects:visited {
+    border: 2px #fff solid;
+    font-size: 1em;
+    color: #fff;
+}
+
+/* CODERS CAMP LOGO */
+
+a.CClink:link,
+a.CClink:hover,
+a.CClink:visited,
+a.CClink:visited:hover,
+a.CClink:active {
+    color: #FFC53D;
+    font-weight: bold;
+}
+
+/* CONTACT ICON */
+.shortcut-icons:link,
+.shortcut-icons:hover,
+.shortcut-icons:visited,
+.shortcut-icons:visited:hover,
+.shortcut-icons:active  {
+    z-index: 100;
+    font-size: 7em;
+    color: #fff;
+    animation: resize 1.5s infinite;
+}
+@keyframes resize {
+    0% {
+        opacity: 0.7;
+        font-size: 6.5em;
+    }
+    50% {
+        opacity: 1;
+        font-size: 7em;
+    }
+    100% {
+        opacity: 0.7;
+        font-size: 6.5em;
+    }
+}
+.shortcut-icons.contact-icon {
+    position: fixed;
+    right: 4vw;
+    bottom: 2vh;
+}
+.shortcut-icons.projects-icon {
+    position: fixed;
+    right: 4vw;
+    bottom: 20vh;
+}
+
+/************* O mnie *****************/
+.screenSizedContainer .btns-project-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 10%;
+    column-gap: 10%;
+}
+.cont2 > div {
+    height: 45vh;
+}
+/*********************************** MOBILE *************************/
+
+@media only screen and (max-width: 1000px) {
+    .screenSizedContainer.part2 .grid-cont {
+        display: grid;
+        grid-template-areas: "jezyki" "bazy" "wersje" "narzedzia";
+    }
+}
