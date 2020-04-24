@@ -54,6 +54,11 @@ body {
     text-align: center;
 }
 
+.red-btn {
+    color: red !important;
+    border-color: red !important;
+}
+
 /********************* CZĘŚĆ PIERWSZA - TYTUŁ ******************/
 
 .screenSizedContainer.part1 {
