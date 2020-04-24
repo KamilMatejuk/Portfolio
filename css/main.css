@@ -15,8 +15,7 @@ body {
 .row>div {
     height: 60vh;
 }
-
-.cont>div {
+.content .row {
     margin: 0;
 }
 
@@ -215,6 +214,10 @@ body {
     font-size: 1em;
     color: #fff;
 }
+.screenSizedContainer .btn-projects.btn-more-projects {
+    color: red;
+    border-color: red;
+}
 
 /* CODERS CAMP LOGO */
 
@@ -276,9 +279,79 @@ a.CClink:active {
 }
 /*********************************** MOBILE *************************/
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 990px) {
     .screenSizedContainer.part2 .grid-cont {
         display: grid;
         grid-template-areas: "jezyki" "bazy" "wersje" "narzedzia";
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .screenSizedContainer h3 {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .screenSizedContainer.part1 h1 {
+        font-size: 5em;
+    }
+    .screenSizedContainer .btns-project-2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10%;
+        row-gap: 10%;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .screenSizedContainer.part1 h1 {
+        font-size: 4em;
+    }
+    .screenSizedContainer h3 {
+        font-size: 2.5em;
+    }
+    .screenSizedContainer .btn-projects:link {
+        font-size: 1em;
+    }
+    .screenSizedContainer .btn-projects:hover,
+    .screenSizedContainer .btn-projects:active,
+    .screenSizedContainer .btn-projects:visited {
+        font-size: 0.7em;
+    }
+    .screenSizedContainer.part2 .grid-cont .text-under {
+        font-size: 0.7em;
+    }
+    @keyframes resize {
+        0% {
+            opacity: 0.7;
+            font-size: 4em;
+        }
+        50% {
+            opacity: 1;
+            font-size: 5em;
+        }
+        100% {
+            opacity: 0.7;
+            font-size: 4em;
+        }
+    }
+    .shortcut-icons.projects-icon {
+        bottom: 15vh;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .screenSizedContainer.part1 h1 {
+        font-size: 3em;
+    }
+    .screenSizedContainer h3 {
+        font-size: 2em;
+    }
+    .screenSizedContainer h4 {
+        font-size: 1.8em;
+    }
+    
+    .screenSizedContainer p {
+        font-size: 0.8em;
     }
 }

@@ -41,3 +41,15 @@ h3 {
         grid-template-rows: repeat(2, 35%);
     }
 }
+@media only screen and (max-width: 500px){
+    .icon:link,
+    .icon:visited {
+        font-size: 8em;
+    }
+}
+@media only screen and (max-width: 400px){
+    .icon:link,
+    .icon:visited {
+        font-size: 6em;
+    }
+}
