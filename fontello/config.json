@@ -47,6 +47,12 @@
       "css": "github-squared",
       "code": 62208,
       "src": "fontawesome"
+    },
+    {
+      "uid": "e1597911f34fea0a188ae51fe4a2d9a9",
+      "css": "stackoverflow",
+      "code": 61804,
+      "src": "fontawesome"
     }
   ]
 }

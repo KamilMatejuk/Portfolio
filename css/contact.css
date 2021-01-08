@@ -20,9 +20,8 @@ h3 {
 .grid-cont2 {
     margin: 0 15%;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(5, 1fr);
 }
-
 .icon:link,
 .icon:visited {
     color: #fff;
@@ -32,13 +31,16 @@ h3 {
 .icon:active {
     color: red;
 }
+.icon-stackoverflow {
+    font-size: 0.9em;
+}
 
 @media only screen and (max-width: 900px) {
     .grid-cont2 {
         margin: 0 15%;
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 35%);
+        grid-template-rows: repeat(3, 35%);
     }
 }
 @media only screen and (max-width: 500px){
