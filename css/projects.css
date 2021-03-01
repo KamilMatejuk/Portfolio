@@ -16,3 +16,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.project-item:nth-child(even) > div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tools {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: red;
+}
