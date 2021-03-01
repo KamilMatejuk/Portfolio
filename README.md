@@ -6,4 +6,4 @@ The goal of this website is to gather all necessary data to contact me, and show
 
 Avaliable at url: https://kamilmatejuk.github.io/Portfolio/
 
-![](img/webpage-img-1.png)
+![](files/webpage-img-1.png)
